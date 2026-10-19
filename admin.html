@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,32 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
-<body>
+  <body class="bg-white/20 h-dvh lg:py-50 px-6 flex flex-col justify-center items-center">
+    <div class="flex flex-row items-center lg:gap-50 gap-10 mb-5">
+      <h2 class="bg-orange-300 px-5 py-3 rounded-lg text-white text-xl font-bold shadow transition duration-300 hover:bg-green-500">Adminitstrateur</h2>
+      <a href="index.html" class="btn btn-outline btn-primary text-xl">Retour à l'accueil</a>
+    </div>
+    <div class="border-2 border-orange-600 flex flex-col justify-center px-5 lg:px-0 items-center lg:py-8 rounded-xl ">
+      <div>
+      <h2 class="text-xl py-2 lg:text-6xl px-5 bg-transparent lg:py-10 text-center text-green-500 font-bold">Aujouter un nouveau produits</h2>
+    </div>
+    <div class="flex flex-col bg-white py-4 gap-2 px-5 lg:py-10 lg:w-140 lg:px-15 border-2 border-green-200 rounded-lg lg:h-auto">
+      <label for="text" class="text-orange-500 font-bold  lg:text-2xl">Nom du produits</label>
+      <input type="text"  class="input input-lg lg:w-full " name="" id="text" placeholder="Salade fraise">
+      <label for="text" class="text-orange-500 font-bold lg:text-2xl">Prix(en Fcfa)</label>
+      <input type="text" class="input input-lg lg:w-full" name="" id="prix" placeholder="Ex:2000fcfa">
+      <label for="text" class="text-orange-500 font-bold lg:text-2xl">Description</label>
+      <textarea name=""  class="textarea lg:w-full" rows="5" id="Description" placeholder="Le produits qui vous faut"></textarea>
+      <label for="text" class="text-orange-500 font-bold lg:text-2xl">Photo du produits</label>
+      <input type="file" class="input input-lg lg:w-full" name="" id="photo">
+    </div>
+    </div>
     
+  
+
+
+
+    <script src="admin.js"></script>
 </body>
+  
 </html>
