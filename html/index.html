@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document Atelier boutique en ligne</title>
+</head>
+
+<body class="">
+
+    <!-- Navbar -->
+    <nav class="bg-white/15 backdrop-blur-lg shadow-lg border border-white/30 lg:mx-50 rounded-[50px] fixed left-0 right-0 z-999 top-4 py-2.5 ">
+        <div class="flex flex-wrap items-center justify-between mx-5 px-4 ">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><img src="Images/Logo.jpg" class="w-15 h-15 rounded-full border border-white/50 object-cover" alt=""></span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <span></span>
+                </div>
+
+                <a href="connexion.html"
+                
+                    class="text-white bg-teal-600 transition-all duration-300 hover:bg-orange-400/50 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none lg:text-xl dark:focus:ring-purple-800 shadow-sm">Se connecter</a>
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="true">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#Accueil"
+                            class="block py-2 pl-3 pr-4 text-white lg:text-xl rounded lg:bg-transparent transition duration-300 hover:text-orange-300 sh lg:p-0 dark:text-white"
+                            aria-current="page">Acceuil</a>
+                    </li>
+
+                     <li>
+                        <a href="#Produits"
+                            class="block py-2 pl-3 pr-4 text-white lg:text-xl  rounded lg:bg-transparent transition duration-300 hover:text-orange-300 lg:p-0 dark:text-white"
+                            aria-current="page">Produits</a>
+                    </li>
+                     <li>
+                        <a href="contact.html"
+                            class="block py-2 pl-3 pr-4 text-white  lg:text-xl rounded lg:bg-transparent transition duration-300 hover:text-orange-300 lg:p-0 dark:text-white "
+                            aria-current="page">Contact</a>
+                    </li>
+                        <li>
+                        <a href="admin.html"
+                            class="block py-2 pl-3 pr-4 text-white  lg:text-xl rounded lg:bg-transparent transition duration-300 hover:text-orange-300 lg:p-0 dark:text-white "
+                            aria-current="page">Adminitrateur</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- La section hero -->
+
+<div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="Images/Logo.jpg" alt="Background Image" class="object-cover object-center w-full h-full" />
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+  
+  <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+    <h1 class="lg:text-7xl text-4xl font-bold leading-tight mb-4">Bienvenue dans notre boutique en ligne <br> L'univers des fruits</h1>
+    <p class="text-lg text-gray-300 lg:text-3xl font-semibold  mb-8">Découvrez nos produits et profitez de services pensés pour vous offrir la meilleure expérience d’achat.</p>
+    <a href="#produits" id="produits" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg lg:text-2xl font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Voir les annonces</a>
+  </div>
+</div>
+
+<!-- la section produits -->
+
+<section class="py-20 lg:py-30 bg-orange-50">
+
+  <div class="flex flex-col justify-center items-center">
+    <h2 class="lg:text-7xl text-4xl font-bold text-[var(--bleu-nuit)] py-5">Vos choix : votre goût</h2>
+    <p class="text-2xl lg:text-3xl py-3 font-semibold">Le seul met qui renforce votre energie : de <span class=" font-bold text-red-500">0%</span> à <span class="font-bold text-green-500">1000% </span></p>
+  </div>
+  <div class="grid grid-cols-1 justify-center items-center lg:grid-cols-3 gap-5 lg:mx-60 mx-30" id="Produits">
+
+    <!-- Prodruits 1 -->
+   <div class="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
+  <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+    <img class="object-cover" src="Images/frutas-de-primavera.jpg" alt="product image" />
+  </a>
+  <div class="mt-4 px-5 pb-5">
+    <a href="#">
+      <h5 class="text-xl tracking-tight font-bold text-slate-900">Fruits de printemps</h5>
+      <p class="text-gray-600 lg:text-xl font-semibold">dcytggoimjm</p>
+    </a>
+    <div class="mt-2 mb-5 flex items-center justify-between">
+      <p>
+        <span class="text-3xl font-bold text-slate-900">2000fcfa</span>
+        <span class="text-sm text-slate-900 line-through">5000fcfa</span>
+      </p>
+      <div class="flex items-center">
+        <span class="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
+      </div>
+    </div>
+    <a href="#" class="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+      Ajouter au panier</a
+    >
+  </div>
+</div>
+
+  <!-- Prodruits 2 -->
+   <div class="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
+  <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+    <img class="object-cover" src="Images/frutas-de-primavera.jpg" alt="product image" />
+  </a>
+  <div class="mt-4 px-5 pb-5">
+    <a href="#">
+      <h5 class="text-xl tracking-tight font-bold text-slate-900">Fruits de printemps</h5>
+      <p class="text-gray-600 lg:text-xl font-semibold">dcytggoimjm</p>
+    </a>
+    <div class="mt-2 mb-5 flex items-center justify-between">
+      <p>
+        <span class="text-3xl font-bold text-slate-900">2000fcfa</span>
+        <span class="text-sm text-slate-900 line-through">5000fcfa</span>
+      </p>
+      <div class="flex items-center">
+        <span class="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
+      </div>
+    </div>
+    <a href="#" class="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+      Ajouter au panier</a
+    >
+  </div>
+</div>
+
+  <!-- Prodruits 3 -->
+   <div class="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
+  <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+    <img class="object-cover" src="Images/frutas-de-primavera.jpg" alt="product image" />
+  </a>
+  <div class="mt-4 px-5 pb-5">
+    <a href="#">
+      <h5 class="text-xl tracking-tight font-bold text-slate-900">Fruits de printemps</h5>
+      <p class="text-gray-600 lg:text-xl font-semibold">dcytggoimjm</p>
+    </a>
+    <div class="mt-2 mb-5 flex items-center justify-between">
+      <p>
+        <span class="text-3xl font-bold text-slate-900">2000fcfa</span>
+        <span class="text-sm text-slate-900 line-through">5000fcfa</span>
+      </p>
+      <div class="flex items-center">
+        <span class="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">5.0</span>
+      </div>
+    </div>
+    <a href="#" class="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+      Ajouter au panier</a
+    >
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- la section Avis clients -->
+  <section id="testimonials" aria-label="What our customers are saying" class="bg-slate-50 py-20 sm:py-32">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl md:text-center">
+      <h2 class="font-display text-3xl lg:text-6xl font-bold tracking-tight text-[var(--bleu-nuit)] sm:text-4xl">Ce que disent nos clients</h2>
+    </div>
+    <ul role="list"
+      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+      <li>
+        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg aria-hidden="true"
+                width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                </path>
+              </svg>
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">J'adore les vêtements et équipements de fitness que j'ai achetés sur ce site. La qualité est exceptionnelle et les prix sont imbattables.</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Sheryl Berge</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/men/15.jpg">
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg aria-hidden="true"
+                width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                </path>
+              </svg>
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">En tant qu'athlète professionnel, j'utilise du matériel de haute performance pour mon entraînement. Ce site propose une excellente sélection de produits haut de gamme.</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Leland Kiehn</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/women/15.jpg">
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg aria-hidden="true"
+                width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                </path>
+              </svg>
+              <blockquote class="relative">
+                <p class="text-lg tracking-tight text-slate-900">Les vêtements de sport que j'ai achetés ici me vont parfaitement et sont incroyablement confortables. Je recommande vivement ce magasin à tous ceux qui recherchent du matériel de qualité.</p>
+              </blockquote>
+              <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                  <div class="font-display text-base text-slate-900">Peter Renolds</div>
+                </div>
+                <div class="overflow-hidden rounded-full bg-slate-50">
+                  <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/men/10.jpg">
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- La section footer -->
+
+<div class="text-center">
+    <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
+        <img src="https://www.svgrepo.com/show/499962/music.svg" class="h-12 mr-3 sm:h-9" alt="Landwind Logo">
+		Landwind
+    </a>
+
+    <span class="block text-sm text-center text-gray-500">© 2021-2022 Landwind™. All Rights Reserved.
+		Built with 
+        <a href="https://flowbite.com"
+			class="text-purple-600 hover:underline">Flowbite</a> and 
+            <a
+			href="https://tailwindcss.com" class="text-purple-600 hover:underline">Tailwind
+			CSS
+        </a>.
+	</span>
+
+    
+</div>
+
+
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
