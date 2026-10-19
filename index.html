@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document Atelier boutique en ligne</title>
+</head>
+
+<body class="">
+
+    <!-- Navbar -->
+    <nav class="bg-white/15 backdrop-blur-lg shadow-lg border border-white/30 lg:mx-50 rounded-[50px] fixed left-0 right-0 z-999 top-4 py-2.5 ">
+        <div class="flex flex-wrap items-center justify-between mx-5 px-4 ">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><img src="Images/Logo.jpg" class="w-15 h-15 rounded-full border border-white/50 object-cover" alt=""></span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <span></span>
+                </div>
+
+                <a href="connexion.html"
+                    class="text-white bg-teal-600 transition-all duration-300 hover:bg-orange-400/50 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none lg:text-xl dark:focus:ring-purple-800 shadow-sm">Se connecter</a>
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="true">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#Accueil"
+                            class="block py-2 pl-3 pr-4 text-white lg:text-xl rounded lg:bg-transparent transition duration-300 hover:text-orange-300 sh lg:p-0 dark:text-white"
+                            aria-current="page">Acceuil</a>
+                    </li>
+
+                     <li>
+                        <a href="#Produits"
+                            class="block py-2 pl-3 pr-4 text-white lg:text-xl  rounded lg:bg-transparent transition duration-300 hover:text-orange-300 lg:p-0 dark:text-white"
+                            aria-current="page">Produits</a>
+                    </li>
+                     <li>
+                        <a href="#Contact"
+                            class="block py-2 pl-3 pr-4 text-white  lg:text-xl rounded lg:bg-transparent transition duration-300 hover:text-orange-300 lg:p-0 dark:text-white "
+                            aria-current="page">Contact</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- La section hero -->
+
+<div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="Images/Logo.jpg" alt="Background Image" class="object-cover object-center w-full h-full" />
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+  
+  <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+    <h1 class="lg:text-7xl text-4xl font-bold leading-tight mb-4">Bienvenue dans notre boutique en ligne <br> L'univers des fruits</h1>
+    <p class="text-lg text-gray-300 lg:text-3xl font-semibold  mb-8">Découvrez nos produits et profitez de services pensés pour vous offrir la meilleure expérience d’achat.</p>
+    <a href="#" id="Produits" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg lg:text-2xl font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Voir les annonces</a>
+  </div>
+</div>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
