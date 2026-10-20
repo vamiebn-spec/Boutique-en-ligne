@@ -45,7 +45,7 @@ const AffichesProduits = (nom,prix,Description,photo)=>{
 
     //Recuperons les elements
  const nom = document.getElementById("nom").value
- const prix = document.getElementById("prix").value
+ const prix = Number(document.getElementById("prix").value)
  const Description = document.getElementById("Description").value
  const photo = document.getElementById("photo").files[0]
 
