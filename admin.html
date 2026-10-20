@@ -1,42 +1,189 @@
+
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+  <title>Administration - Ma Boutique</title>
 </head>
-  <body class="bg-white/20 h-dvh lg:py-50 px-6 mt-2 flex flex-col justify-center items-center">
-    <div class="flex flex-row justify-center items-center mx-10 lg:gap-50 gap-2 mt-1 mb-3 lg:mb-5">
-      <h2 class="bg-orange-300 px-5 py-3 rounded-lg text-white lg:text-xl font-bold shadow transition duration-300 hover:bg-green-500">Adminitstrateur</h2>
-      <a href="index.html" class="btn lg:px-3 btn-outline btn-primary lg:text-xl"><i class="bi bi-arrow-counterclockwise font-bold"></i>Retour à l'accueil</a>
+
+<body class="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 px-4 py-8 sm:px-6 lg:px-10">
+
+  <!-- En-tête -->
+  <div class="mx-auto mb-8 flex w-full max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
+
+    <h2
+      class="flex items-center gap-3 rounded-2xl bg-orange-500 px-6 py-4 text-lg font-extrabold text-white shadow-lg shadow-orange-200 transition duration-300 hover:bg-orange-600 sm:text-xl">
+      <i class="bi bi-shield-lock-fill text-2xl"></i>
+      Administrateur
+    </h2>
+
+    <a href="index.html"
+      class="btn btn-outline border-orange-500 text-orange-600 lg:text-2xl transition duration-300 hover:border-green-600 py-8 hover:bg-green-500 hover:text-white">
+      <i class="bi bi-arrow-counterclockwise text-lg"></i>
+      Retour à l'accueil
+    </a>
+
+  </div>
+
+  <!-- Conteneur principal -->
+  <div
+    class="mx-auto w-full max-w-3xl overflow-hidden rounded-3xl border border-orange-100 bg-white shadow-xl shadow-orange-100/70">
+
+    <!-- Titre -->
+    <div class="bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-8 text-center sm:px-10 sm:py-10">
+
+      <div
+        class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 text-white ring-1 ring-white/30">
+        <i class="bi bi-box-seam text-4xl"></i>
+      </div>
+
+      <h1 class="text-2xl font-extrabold tracking-tight text-white sm:text-4xl">
+        Ajouter un nouveau produit
+      </h1>
+
+      <p class="mt-3 text-sm leading-6 text-orange-50 sm:text-base">
+        Renseignez les informations de votre article pour l'ajouter à votre boutique.
+      </p>
+
     </div>
-    <div class="border-2 border-orange-600 flex flex-col justify-center px-5 lg:px-0 items-center lg:py-3 rounded-xl ">
+
+    <!-- Formulaire -->
+    <form id="form" class="flex flex-col gap-5 p-5 sm:gap-6 sm:p-8 lg:p-10">
+
+      <!-- Nom -->
+      <div class="flex flex-col gap-2">
+        <label for="nom" class="flex items-center gap-2 font-bold text-slate-700 sm:text-lg">
+          <i class="bi bi-tag text-orange-500"></i>
+          Nom du produit
+        </label>
+
+        <input type="text"
+          class="input input-bordered w-full rounded-xl border-slate-200 bg-slate-50 transition focus:border-orange-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-100"
+          name="nom" id="nom" placeholder="Ex. : Salade de fraises" required>
+      </div>
+
+      <!-- Prix -->
+      <div class="flex flex-col gap-2">
+        <label for="prix" class="flex items-center gap-2 font-bold text-slate-700 sm:text-lg">
+          <i class="bi bi-currency-exchange text-orange-500"></i>
+          Prix (en FCFA)
+        </label>
+
+        <div class="relative">
+          <input type="number"
+            class="input input-bordered w-full rounded-xl border-slate-200 bg-slate-50 pr-20 transition focus:border-orange-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-100"
+            name="prix" id="prix" placeholder="Ex. : 2000" min="1" required>
+
+          <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 font-bold text-slate-400">
+            FCFA
+          </span>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="flex flex-col gap-2">
+        <label for="Description" class="flex items-center gap-2 font-bold text-slate-700 sm:text-lg">
+          <i class="bi bi-card-text text-orange-500"></i>
+          Description
+        </label>
+
+        <textarea name="Description"
+          class="textarea textarea-bordered min-h-32 w-full rounded-xl border-slate-200 bg-slate-50 transition focus:border-orange-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-100"
+          rows="5" id="Description" placeholder="Présentez votre produit et ses avantages..." required></textarea>
+      </div>
+
+      <!-- Photo -->
+      <div class="flex flex-col gap-2">
+        <label for="photo" class="flex items-center gap-2 font-bold text-slate-700 sm:text-lg">
+          <i class="bi bi-image text-orange-500"></i>
+          Photo du produit
+        </label>
+
+        <div
+          class="rounded-2xl border-2 border-dashed border-orange-200 bg-orange-50/60 p-4 transition hover:border-orange-400 sm:p-6">
+
+          <div class="mb-3 flex items-center gap-3">
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white text-orange-500 shadow-sm">
+              <i class="bi bi-cloud-arrow-up text-2xl"></i>
+            </div>
+
+            <div>
+              <p class="font-bold text-slate-700">Importez votre image</p>
+              <p class="text-sm text-slate-500">Choisissez une photo depuis votre appareil.</p>
+            </div>
+          </div>
+
+          <input type="file"
+            class="file-input file-input-bordered w-full max-w-full rounded-xl border-slate-200 bg-white" name="photo"
+            id="photo" accept="image/*" required>
+
+        </div>
+      </div>
+
+      <!-- Bouton -->
+      <div class="pt-2">
+        <button type="submit" id="submit"
+          class="btn h-auto min-h-14 w-full rounded-xl border-0 bg-green-500 px-5 py-4 text-base font-extrabold text-white shadow-lg shadow-orange-200 transition duration-300 hover:-translate-y-0.5 hover:bg-orange-600 hover:shadow-xl sm:text-lg">
+          <i class="bi bi-plus-circle-fill text-xl"></i>
+          Enregistrer ce produit
+        </button>
+
+        <p class="mt-3 text-center text-xs text-slate-400 sm:text-sm">
+          <i class="bi bi-info-circle mr-1"></i>
+          Vérifiez les informations avant l'enregistrement.
+        </p>
+      </div>
+
+    </form>
+
+  </div>
+
+  <!-- Liste des produits -->
+  <section class="mx-auto mt-12 w-full max-w-6xl">
+
+    <div class="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+
       <div>
-      <h2 class="text-xl py-2 lg:text-6xl px-5 bg-transparent lg:py-10 text-center text-green-500 font-bold">Aujouter un nouveau produits</h2>
-    </div>
-    <div class="flex flex-col bg-white py-4 gap-2 px-5 lg:py-10 lg:w-140 lg:px-15 border-2 border-green-200 rounded-lg lg:h-auto">
-      <label for="text" class="text-orange-500 font-bold  lg:text-2xl">Nom du produits</label>
-      <input type="text"  class="input input-lg lg:w-full " name="" id="text" placeholder="Salade fraise">
-      <label for="text" class="text-orange-500 font-bold lg:text-2xl">Prix(en Fcfa)</label>
-      <input type="text" class="input input-lg lg:w-full" name="" id="prix" placeholder="Ex:2000fcfa">
-      <label for="text" class="text-orange-500 font-bold lg:text-2xl">Description</label>
-      <textarea name=""  class="textarea lg:w-full" rows="5" id="Description" placeholder="Le produits qui vous faut"></textarea>
-      <label for="text" class="text-orange-500 font-bold lg:text-2xl">Photo du produits</label>
-      <input type="file" class="input input-lg lg:w-full" name="" id="photo">
-    </div>
-    <div class="py-3">
-      <button class="btn bg-green-400 lg:py-7 text-xl text-white font-bold">Enregistrer ce produits</button>
-    </div>
-    </div>
-    
-  
+        <p class="mb-2 text-sm font-bold uppercase tracking-widest text-orange-500">
+          Votre catalogue
+        </p>
 
+        <h2 class="text-2xl font-extrabold text-slate-800 sm:text-3xl">
+          Les produits ajoutés
+        </h2>
 
+        <p class="mt-2 text-sm text-slate-500 sm:text-base">
+          Retrouvez ici les articles affichés dans votre boutique.
+        </p>
+      </div>
 
-    <script src="admin.js"></script>
+      <span
+        class="inline-flex w-fit items-center gap-2 rounded-full border border-orange-100 bg-white px-4 py-2 text-sm font-semibold text-orange-600 shadow-sm">
+        <i class="bi bi-grid-3x3-gap-fill"></i>
+        Catalogue
+      </span>
+
+    </div>
+
+    <div class="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3" id="listesproduits">
+      <!-- Les produits seront affichés ici par JavaScript -->
+    </div>
+
+  </section>
+
+<script src="admin.js></script>
+
 </body>
-  
+
 </html>
+```
